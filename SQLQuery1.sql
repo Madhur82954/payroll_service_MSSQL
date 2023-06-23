@@ -34,3 +34,7 @@ alter table employee_payroll add Phone bigint;
 select * from employee_payroll;
 alter table employee_payroll add Address varchar(250);
 alter table employee_payroll add Department varchar(250);
+
+--UC9-Ability to extend employee payroll table to have basic pay, deductions,taxable pay,income tax,net pay
+alter table employee_payroll add Deduction bigint,Taxable_Pay float,Income_Tax float,Net_Pay float;
+select * from employee_payroll;
