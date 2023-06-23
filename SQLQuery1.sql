@@ -10,3 +10,7 @@ insert into employee_payroll values('Madhur',35000,'2020-02-20'),('manish',38000
 
 --UC4-RetrieveData--
 select * from employee_payroll;
+
+--UC5-viewData--
+select Salary from employee_payroll where name='Madhur';
+select * from employee_payroll where startDate between cast('2020-02-20' as date) and getdate();
