@@ -7,3 +7,6 @@ create table employee_payroll(ID int identity(1,1) primary key,name varchar(20),
 
 --UC3-Insert into employee_payroll--
 insert into employee_payroll values('Madhur',35000,'2020-02-20'),('manish',38000,'2020-03-19');
+
+--UC4-RetrieveData--
+select * from employee_payroll;
