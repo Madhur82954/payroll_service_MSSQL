@@ -14,3 +14,8 @@ select * from employee_payroll;
 --UC5-viewData--
 select Salary from employee_payroll where name='Madhur';
 select * from employee_payroll where startDate between cast('2020-02-20' as date) and getdate();
+
+--UC6--
+select * from employee_payroll;
+alter table employee_payroll add Gender char(1);
+update employee_payroll set Gender='M';
